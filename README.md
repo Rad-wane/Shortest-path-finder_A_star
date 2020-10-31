@@ -6,7 +6,7 @@ Dev. by : **Radwane Ait Ouhani**.
 
 In this repo. you can find 3 files :
 * `Shortest_path_finder.py` : Where all the magic happen, when runing, you get the visualization tool where you can draw, delete and launch the A* algo. 
-* `A_star_algo.py` : A module with the 1* algo. that is imported into the `Shortest_path_finder.py`
+* `A_star_algo.py` : A module with the A* algo. that is imported into the `Shortest_path_finder.py`
 * `colors.py` : A module with the colors in RGB format, that I used for the visualization tool. Also imported into `Shortest_path_finder.py`
 
 I used `Pygame` for visualization and `tkinter` for the pop-up message in case a path is impossible. There are some comments alongside the code for clarification.
@@ -16,7 +16,7 @@ All the distances between spots are = 1.
 
 First run the `Shortest_path_finder.py`, a 800x800 window with a grid will pop-up. Your first click is the **start position**, you second is the **end position**, 
 and if you click more, you can create a barrier (as many as you want, the more the merrier). Then you can press the `spacebar` key to start the A* search algo. You
-can then see it as it evolve, with the color green as open position, and red as closed one. When it reaches the end spot, the shortest path is drawn in purple. 
+can then see it as it evolve, with the color green as open positions, and red as closed one. When it reaches the end spot, the shortest path is drawn in purple. 
 You can the press `c` on your keybord to clear all and restart. If you the path is impossible to find, a message pops-up. 
 
 ## The A* algorithm :
@@ -27,8 +27,8 @@ of a graph, it aims to find a path to the given goal node having the smallest co
 a tree of paths originating at the start node and extending those paths one edge at a time until its termination criterion is satisfied.
 
 At each iteration of its main loop, A* needs to determine which of its paths to extend. It does so based on the cost of the path and an estimate of the cost 
-required to extend the path all the way to the goal. Specifically, A* selects the path that minimizes **f(n)=g(n)+h(n)** where **n** is the next node 
-on the path, **g(n)** is the cost of the path from the start node to n, and **h(n)** is a heuristic function that estimates the cost of the 
+required to extend the path all the way to the goal. Specifically, A* selects the path that minimizes `**f(n)=g(n)+h(n)**` where `**n**` is the next node 
+on the path, `**g(n)**` is the cost of the path from the start node to `n`, and `**h(n)**` is a heuristic function that estimates the cost of the 
 cheapest path from n to the goal (for my code, I used `L distance` or `Manhattan distance` as h(n)) . A* terminates when the path it chooses to extend is a path
 from start to goal or if there are no paths eligible to be extended. The heuristic function is problem-specific. If the heuristic function is admissible, meaning 
 that it never overestimates the actual cost to get to the goal, A* is guaranteed to return a least-cost path from start to goal.
