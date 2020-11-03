@@ -101,8 +101,8 @@ class Spot():
             self.neighbors.append(grid[self.row][self.col-1])
 
             
-#making the grid and the spots:
-    #making the grid
+# making the grid and the spots:
+#     making the grid
 def make_grid(rows,width):
     grid =[]
     gap=width//rows
