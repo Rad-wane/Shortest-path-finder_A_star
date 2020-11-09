@@ -1,7 +1,7 @@
 # Shortest path finder with Python
 ## Using the A* algorithm & with visualization tool 
 
-Dev. by : **Radwane Ait Ouhani**.
+Dev. by : **Rad-wane**.
 
 
 In this repo. you can find 3 files :
@@ -11,6 +11,9 @@ In this repo. you can find 3 files :
 
 I used `Pygame` for visualization and `tkinter` for the pop-up message in case a path is impossible. There are some comments alongside the code for clarification.
 All the distances between spots are = 1.    
+
+## Screen shot:
+![](Capture.PNG)
 
 ## Using the code : 
 
